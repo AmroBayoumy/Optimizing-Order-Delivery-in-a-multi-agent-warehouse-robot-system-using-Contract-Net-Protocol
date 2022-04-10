@@ -1,0 +1,90 @@
+agents:
+-   start: [9, 0]
+    goal: [9, 0]
+    name: agent0
+-   start: [8, 0]
+    goal: [8, 0]
+    name: agent1
+-   start: [7, 0]
+    goal: [7, 0]
+    name: agent2
+-   start: [6, 0]
+    goal: [6, 0]
+    name: agent3
+-   start: [5, 0]
+    goal: [5, 0]
+    name: agent4
+-   start: [4, 0]
+    goal: [4, 0]
+    name: agent5
+map:
+    dimensions: [10, 10]
+    obstacles:
+        - !!python/tuple [8, 8]
+        - !!python/tuple [7, 8]
+
+        - !!python/tuple [5, 5]
+        - !!python/tuple [4, 5]
+
+    # - !!python/tuple [2, 1]
+
+    pickupStation:
+        - !!python/tuple [9, 9]
+
+        - !!python/tuple [0, 9]
+
+        - !!python/tuple [4, 9]
+
+    deliveryStation:
+        - !!python/tuple [0, 0]
+order:
+    orders_:
+        -   id_code: o0
+            timestep: 1
+            requested_quantities: [1]
+            pickupStation:
+                - !!python/tuple [9, 9]
+
+        -   id_code: o1
+            timestep: 1
+            requested_quantities: [1]
+            pickupStation:
+                - !!python/tuple [4, 9]
+
+        -   id_code: o2
+            timestep: 1
+            requested_quantities: [1]
+            pickupStation:
+                - !!python/tuple [0, 9]
+
+        -   id_code: o3
+            timestep: 10
+            requested_quantities: [1]
+            pickupStation:
+                - !!python/tuple [0, 9]
+
+        -   id_code: o4
+            timestep: 15
+            requested_quantities: [1]
+            pickupStation:
+                - !!python/tuple [4, 9]
+
+        -   id_code: o5
+            timestep: 25
+            requested_quantities: [1]
+            pickupStation:
+                - !!python/tuple [9, 9]
+
+        -   id_code: o6
+            timestep: 40
+            requested_quantities: [1]
+            pickupStation:
+                - !!python/tuple [0, 9]
+
+        -   id_code: o7
+            timestep: 40
+            requested_quantities: [1]
+            pickupStation:
+                - !!python/tuple [4, 9]
+
+dynamic_obstacles: {}
